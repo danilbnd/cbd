@@ -1,0 +1,74 @@
+.ba-offer{
+	background: #ccc url(../img/photo-slider.jpg) 50%;
+	background-size: cover;
+	padding-top: 269px;
+	padding-bottom: 320px;
+	text-align: center;
+	color: $white;
+	position: relative;
+	img{
+		margin: 0 auto;
+		margin-bottom: 45px;
+	}
+	p{
+		font-weight: 300;
+		letter-spacing: 1.7px;
+	}
+	&--img2{
+		background: #ccc url(../img/bg1.jpg) 50%;
+		background-size: cover;
+
+	}
+	&--img3{
+		background: #ccc url(../img/bg3.jpg) 50%;
+		background-size: cover;
+
+	}
+	span{
+		position: relative;
+	}
+	span:before{
+		position: absolute;
+		content: "";
+		height: 1px;
+		width: 45px;
+		background: #fff;
+		top: 13px;
+		left: -70px;
+
+
+	}
+}
+
+.ba-slider-btn{
+	width: 130px;
+	height: 100px;
+	background: transparent;
+	color: #fff;
+	border: 1px solid $white;
+	border-radius: 0;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	// padding: 10px 10px;
+
+	&:hover, &:focus{
+		outline: none;
+		background: rgba(#333, 0.5);
+	}
+	&.slick-disabled{
+		opacity: 0.5;
+		pointer-events: none;
+	}
+}
+.ba-best-slider__arrows{
+position: absolute;
+	bottom: 0;
+	left: 40%;
+	display: flex;
+
+}
+
+
+
+

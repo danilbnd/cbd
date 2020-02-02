@@ -1,0 +1,151 @@
+.ba-main-menu {
+	a {
+	  color: $white;
+	  &:hover {
+		 color: lighten($primary-color, 20%);
+	  }
+	}
+ }
+ .off-canvas {
+	.menu {
+	  a {
+		 padding: 10px;
+	  }
+	}
+ }
+ 
+
+.ba-fixed-menu {
+  position: fixed;
+  top: 0;
+}
+
+.ba-header-wrap {
+  background: #accbe1 url(../img/intro-bg.jpg) 50%;
+  background-size: cover;
+  height: 100vh;
+  
+
+}
+.ba-left-nav,
+.ba-right-nav {
+	li{
+		color:$white;
+		a {
+		  color: $white;
+		  font-size: 16px;
+		  font-weight: 400;
+		  line-height: 40px;
+		  text-transform: uppercase;
+		  letter-spacing: 1px;
+		  &:hover {
+			 color: $dark-green;
+			 text-decoration: line-through;
+		  }
+	}
+  }
+  li + li {
+    margin-left: 50px;
+  }
+}
+.ba-right-nav {
+	
+  li {
+	 border-left: 1px solid $white;
+  }
+}
+.ba-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $white;
+}
+.ba-logo{
+  padding: 27px 240px;
+}
+
+
+.ba-section-intro{
+	padding-top: 240px;
+	text-align: right;
+	color: $white;
+	@include breakpoint(medium){
+		padding-top: 240px;
+	}
+
+	&__title{
+		letter-spacing:5px;
+		font-weight: 400;
+		margin-bottom: 5px;
+		font-size: 35px;
+		
+		@include breakpoint(medium){
+			font-size: 55px;
+			margin-bottom: 37px;
+		}
+	}
+	&__subtitle{
+		font-weight: 300;
+		letter-spacing: 1.8px;
+		font-size: 14px;
+		@include breakpoint(medium){
+			font-size: 24px;
+		}
+	
+}
+&__btn{
+	display: inline-block;
+	border: 1px solid $white;
+	color: $white;
+	text-transform: uppercase;
+	padding: 16px 50px 16px 16px;
+	position: relative;
+	margin-bottom: 10px;
+	font-size: 10px;
+	@include breakpoint(medium){
+		font-size: 20px;
+		padding: 16px 70px 16px 16px;
+	}
+	&:after{
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: 20px;
+		height: 1px;
+		width: 25px;
+		background: #fff;
+		@include breakpoint(medium){
+			width: 45px;
+			right: 10px;
+		}
+	}
+	&:hover{
+		color: $white;
+		background: rgba(#fff, .5);
+	}
+	}
+	&__btn-see{
+		display: block;
+		color: $white;
+		font-weight: 300;
+		letter-spacing: 1.5px;
+		font-size: 12px;
+
+		&:hover{
+			color: rgba(#fff, .6);
+		}
+		
+
+		svg{
+			padding-left: 10px;
+			padding-top: 10px;
+		}
+		@include breakpoint(medium){
+			font-size: 18px;
+			
+		}
+
+	}
+}
+
+

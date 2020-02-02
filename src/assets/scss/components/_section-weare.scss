@@ -1,0 +1,10 @@
+.ba-section-weare{
+	
+	padding-top: 50px;
+
+	@include breakpoint(medium){
+		padding-left: 25%;
+	padding-top: 100px;
+	
+	}
+}
